@@ -1,0 +1,12 @@
+import static org.mockito.Mockito.*;
+import org.sosy_lab.sv_benchmarks.Verifier;
+
+public class ValidationHarness {
+  public static void main(String[] args) {
+    Verifier verifier = mock(Verifier.class);
+    ClassName.verifier = verifier;
+    when(ClassName.verifier.Type()).thenReturn(Counterexample);
+
+    ClassName.main(new String[0]);
+   }
+}
