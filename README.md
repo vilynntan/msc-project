@@ -9,3 +9,5 @@
 
 ### Usage with SV-COMP Benchmarks
 Run `python3 script.py filename.java`(recommended) or `python3 script.py filename.class` or `python3 script.py filename`
+
+Note: The benchmark file must be modified to remove any use of `static` keyword. Refer to the samples provided. 
